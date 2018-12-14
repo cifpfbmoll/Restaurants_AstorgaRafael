@@ -1,13 +1,5 @@
 
-  
-  .jumbotron img {
 
-    position: absolute;
-    right: 70%;
-    bottom: 77%;
-    width: 10%;
-    margin-top:10px;
-  }
   body {
     margin-right:20px;
     margin-left:20px;
@@ -16,5 +8,19 @@
   }
   .row {
     margin-left: 80px;
+  }
+
+ #cab{
+   height: 500px;
+    background: no-repeat;
+      background-image:  url("https://media.giphy.com/media/hvxoUlKJiAyWc/giphy.gif");
+      
+      background-size: 100%;
+  }
+
+  #cab img{
+        width: 30%;
+        position: relative;
+        top: -50px;
   }
     

@@ -14,91 +14,35 @@
       
 
     <?php
-        /*
-            $array= array
-            (
-                Name-City-Street-Number-CP-TelfNumber-Picture 
-            array("Restaurante Serrano","Astorga","Calle Porteria","Muy acogedor, con una carta muy apetecible, nos atendieron estupendamente, con mucha profesionalidad y los platos que pedimos estaban muy bien preparados",2,24700,"+34 987 61 78 66","https://static2.leonoticias.com/www/multimedia/201804/07/media/cortadas/facahada_475px-k6Z-U501539834550BIB-624x385@Leonoticias.jpg"),
-            array("Juan Luis","Astorga","Calle San Pedro","Está a unos 5 minutos andando de la catedral, merece la pena el paseo. El restaurante está limpísimo con vajilla y cubiertos de mucha calidad y mantelería toda de paño. Las dos chicas que nos atendieron súper amables y atentas, de 10.",49,24700,"+34 987 61 90 27","https://i0.wp.com/www.eljaponeserrante.com/wp-content/uploads/2018/05/mesonJuanLuis.jpg?fit=1200%2C674&ssl=1"),
-            array("Restaurante Parrillada Bardal","Astorga","Calle Pradorrey","Ensalada bien , chuleton excelente, vino del bierzo rico , postres caseros del 10 .... Justiprecio ! Amables , con cariño .... Me lo recomendó ",2,24700,"+34 987 60 65 55","https://u.tfstatic.com/restaurant_photos/873/387873/169/612/parrillada-asador-monterrey-sugerencia-carne-55b6b.jpg"),
-            array("La Peseta Restaurante","Astorga","Plaza San Bartolome","Qué gran recomendación nos hicieron. Merece la pena acudir y probar su excelente gastronomía. El cogote de merluza al horno,...y todo ello con un vino de El Bierzo... Genial.",3,24700,"+34 987 61 72 75","https://s-ec.bstatic.com/images/hotel/max1024x768/592/5922204.jpg"),
-            array("Restaurante La Berciana","Astorga","Calle Magin Garcia Revillo","Pese a las opiniones, decidimos entrar. Un gran acierto¡¡¡ muy buena atención y deliciosa comida, alejada de los 23 €/persona que ofrecían otros establecimientos por el maragato; pese a que es menos cantidad mas que suficiente. Recomendado 100 % calidad precio.",4,24700,"+34 987 61 84 65","https://tabernaberciana.com/wp-content/uploads/2014/09/IMG_2485.jpg")
-            );
-
-            function getRestaurants() {
-                global $array;
-                return $array;
-            }
-
-            $res = getRestaurants();
-                */
-            // =============================================
-            
-            /*Definimos una funcion que almacena la array */
-        function getRestaurants() {
-            $array= array
-            (
-                /* Name-City-Street-Number-CP-TelfNumber-Picture */
-            array(  "Name"=>"Restaurante Serrano",
-                    "City"=>"Astorga",
-                    "Street"=>"Calle Porteria",
-                    "Coment"=>"Muy acogedor, con una carta muy apetecible, nos atendieron estupendamente, con mucha profesionalidad y los platos que pedimos estaban muy bien preparados",
-                    "Numero"=>2,
-                    "CP"=>24700,
-                    "TelfNumber"=>"+34 987 61 78 66","Img"=>"https://static2.leonoticias.com/www/multimedia/201804/07/media/cortadas/facahada_475px-k6Z-U501539834550BIB-624x385@Leonoticias.jpg"),
-
-            array(  "Name"=>"Juan Luis",
-                    "City"=>"Astorga",
-                    "Street"=>"Calle San Pedro",
-                    "Coment"=>"Está a unos 5 minutos andando de la catedral, merece la pena el paseo. El restaurante está limpísimo con vajilla y cubiertos de mucha calidad y mantelería toda de paño. Las dos chicas que nos atendieron súper amables y atentas, de 10.",
-                    "Numero"=>49,
-                    "CP"=>24700,
-                    "TelfNumber"=>"+34 987 61 90 27",
-                    "Img"=>"https://i0.wp.com/www.eljaponeserrante.com/wp-content/uploads/2018/05/mesonJuanLuis.jpg?fit=1200%2C674&ssl=1"),
-
-            array(  "Name"=>"Restaurante Parrillada Bardal",
-                    "City"=>"Astorga",
-                    "Street"=>"Calle Pradorrey",
-                    "Coment"=>"Ensalada bien , chuleton excelente, vino del bierzo rico , postres caseros del 10 .... Justiprecio ! Amables , con cariño .... Me lo recomendó ",
-                    "Numero"=>2,
-                    "CP"=>24700,
-                    "TelfNumber"=>"+34 987 60 65 55","Img"=>"https://u.tfstatic.com/restaurant_photos/873/387873/169/612/parrillada-asador-monterrey-sugerencia-carne-55b6b.jpg"),
-
-            array(  "Name"=>"La Peseta Restaurante",
-                    "City"=>"Astorga",
-                    "Street"=>"Plaza San Bartolome",
-                    "Coment"=>"Qué gran recomendación nos hicieron. Merece la pena acudir y probar su excelente gastronomía. El cogote de merluza al horno,...y todo ello con un vino de El Bierzo... Genial.",
-                    "Numero"=>3,
-                    "CP"=>24700,
-                    "TelfNumber"=>"+34 987 61 72 75",
-                    "Img"=>"https://s-ec.bstatic.com/images/hotel/max1024x768/592/5922204.jpg"),
-
-            array(  "Name"=>"Restaurante La Berciana",
-                    "City"=>"Astorga",
-                    "Street"=>"Calle Magin Garcia Revillo",
-                    "Coment"=>"Pese a las opiniones, decidimos entrar. Un gran acierto¡¡¡ muy buena atención y deliciosa comida, alejada de los 23 €/persona que ofrecían otros establecimientos por el maragato; pese a que es menos cantidad mas que suficiente. Recomendado 100 % calidad precio.",
-                    "Numero"=>4,
-                    "CP"=>24700,
-                    "TelfNumber"=>"+34 987 61 84 65",
-                    "Img"=>"https://tabernaberciana.com/wp-content/uploads/2014/09/IMG_2485.jpg")
-            );
-            
-            return $array;
-        }
-
-        $res = getRestaurants();
+        include('functions.php');
+        $res = getRestaurants(isset($_REQUEST['q'])?$_REQUEST['q']:"");
+            /* Condicion ? Caso Sí: Caso No
+          */
     ?>
         <!-- Aqui empieza el codigo HTML donde empieza nuestra pagina-->
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfyGAbkC94TOr1uwuW9uwLJX_zWTuHZXLyI6bYKQlDMvSXEdbjA" alt="Logo image" >
-        <h2>Restaurants</h2>    
+    <div id="cab" class="jumbotron text-center" style="margin-bottom:0">
+        <img  src="img/ico.png" alt="Logo image" > 
     </div>
-    <br>
+    <nav class="navbar navbar-expand-sm bg-white navbar-white">
+        <form class="form-inline" method="get">
+            <input class="form-control mr-sm-2" type="text" name="q" value="<?= (isset($_REQUEST['q'])?$_REQUEST['q']:"")?>" placeholder="Introducir Busqueda">
+            <select name="o" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                <option value="1">Ascendente</option>
+                <option value="2">Descendente</option>
+            </select>
+            <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                <input type="checkbox" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Recordar mi seleccion</span>
+            </label>
+            <button class="btn" type="submit">Busqeda</button>
+        </form>
+    </nav>
     <br>
 
     <?php
     /*Definimos un bucle for para iterar las cards con la informacion de la Array */
-        for ($num=0; $num<5; $num++):
+        for ($num=0; $num<count($res); $num++):
     /*Definimos un bucle if para abrir y cerrar las columnas cuando aga falta (cada 2 cards) */
             if ($num%2==0):
     ?>
@@ -108,10 +52,13 @@
     ?>
                     <div class=' col-sm-12 col-md-12 col-lg-6'>  
                         <div class="card" style="width:400px">
+                        <div class="card-header"><?= $res[$num]["Mode"] ?></div>
                             <img class="card-img-top" src="<?= $res[$num]["Img"] ?>" alt="Card image" style="width:100%">
                                 <div class="card-body">
                                     <h4 class="card-title"><?= $res[$num]["Name"] ?></h4>
                                     <p class="card-text"><?= $res[$num]["Coment"] ?></p>
+                                </div>
+                                <div class="card-footer">
                                     <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo<?= $num?>">More Info +</button>
                                         <div id="demo<?= $num?>" class="collapse">
                                         <br>
