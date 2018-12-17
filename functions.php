@@ -74,6 +74,7 @@
                     }
                 }
             }
+            if (!empty($_REQUEST['o'])){
             if($_REQUEST['o']==1){
                 SORT($resultado);
                 return $resultado;
@@ -83,6 +84,9 @@
             }elseif(empty($que)){
                 return $array;
             }
+        }else{
+            return $array;
+        }
         }
         
 
