@@ -17,7 +17,7 @@
     <?php
         /*Incluimos el fichero con funciones y llamamos a la funcion que tenemos que usar */
         include('functions.php');
-        $res = getRestaurant($_REQUEST['id']);
+        $res = getRestaurant($_GET['id']);
             
     ?>
         <!-- Aqui empieza el codigo HTML donde empieza nuestra pagina-->

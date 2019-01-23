@@ -16,7 +16,7 @@
     <?php
     /*Incluimos el fichero con funciones y llamamos a la funcion que tenemos que usar */
         include('functions.php');
-        $res = getRestaurants(isset($_REQUEST['q'])?$_REQUEST['q']:"");
+        $res = getRestaurants(isset($_GET['q'])?$_GET['q']:"");
     ?>
         <!-- Aqui empieza el codigo HTML donde empieza nuestra pagina-->
     <div id="cab" class="jumbotron text-center" style="margin-bottom:0">
@@ -26,10 +26,10 @@
     <!--Aqui se plantea la parte de formulario en la que se introduce la busqueda de texto para restaurante y como ordernarlos, se plantea un
     IF en cada opcion para que el valor sea el mismo que tenias en la busqueda cuando as pulsado el boton-->
         <form class="form-inline" method="get">
-            <input class="form-control mr-sm-2" type="text" name="q" value="<?= (isset($_REQUEST['q'])?$_REQUEST['q']:"")?>" placeholder="Introducir Busqueda">
+            <input class="form-control mr-sm-2" type="text" name="q" value="<?= (isset($_GET['q'])?$_GET['q']:"")?>" placeholder="Introducir Busqueda">
             <select name="o" class="custom-select mb-2 mr-sm-2 mb-sm-0"  id="inlineFormCustomSelect">
-                <option value="1" <?= (isset($_REQUEST['o']) && $_REQUEST['o']== 2?'':'selected')?>>Ascendente</option>
-                <option value="2" <?= (isset($_REQUEST['o']) && $_REQUEST['o']== 2?'selected':'')?>>Descendente</option>
+                <option value="1" <?= (isset($_GET['o']) && $_GET['o']== 2?'':'selected')?>>Ascendente</option>
+                <option value="2" <?= (isset($_GET['o']) && $_GET['o']== 2?'selected':'')?>>Descendente</option>
             </select>
             <button class="btn" type="submit">Busqeda</button>
         </form>
