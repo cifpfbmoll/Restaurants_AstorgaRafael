@@ -20,6 +20,3 @@ This task is about to create a web page with information of a few restaurants. I
 ```
 
 With this code you can connect the code with de sql of your XAMPP for example
-
-
-he README file must be a Markdown file that explains how this program can be deployed in a web server, and their requirements (Apache, PHP…). Important: now, it must contain how to deploy the database. This file must contain also information about this task (name, author, subject, school year…).
