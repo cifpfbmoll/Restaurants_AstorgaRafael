@@ -10,11 +10,11 @@ This task is about to create a web page with information of a few restaurants. I
 
 1. The search engine motor is updated; now it  use the SQL resources for do the search and not to use the PHP resouces
 2. Now you can get registered and get loged in the web page; there are 3 new pages
-    1.1 login.php
+   + 1.1 login.php
         It manages the page for get logged in the web page, it controls if you get wrong on your password or in your user; if you get logged you will get redirected to the index page
-    1.2 reg.php
+   + 1.2 reg.php
         It manages the page fot get registered in the web page, it control if you are pretending to create a duplicate user; if ypu get well registered you will be redirected to the login.php
-    1.3 logout.php
+   + 1.3 logout.php
         At the moment you get logged; in the index page the login and register button get disapeared and a logout button appears next to the text "Hello %Usernama%"; if you press the button you will be redirected to the index page but you don't will be logged in the page.
 
 ## 4.0 Changes
@@ -23,13 +23,13 @@ This update includes coments for the restaurants
 
 ### Manage  database file
 
-##Create your DB
+#### Create your DB
 
-For create the DB of my webpage you can taque the file restaurants.slq from the sql folder and run this script on your DBmanager
+For create the DB of my webpage you can taque the file *restaurants.slq* from the *sql* folder and run this script on your DBmanager
 
-##Connection to database
+#### Connection to database
 
-You can get connect your web page with this code in a .php page
+You can get connect your web page with this code in a *.php* page
 
 ```php 
 
