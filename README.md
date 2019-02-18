@@ -45,4 +45,4 @@ You can get connect your web page with this code in a *.php* page
 
 With this code you can connect the code with de sql of your XAMPP for example
 
-https://serveriaw.iesfbmoll.org/~rastorga/
+https://serveriaw.iesfbmoll.org/~rastorga/restaurante
